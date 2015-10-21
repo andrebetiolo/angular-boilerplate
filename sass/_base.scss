@@ -1,0 +1,25 @@
+// Váriaveis
+$cor-padrao: #2196F3;
+$cor-secundaria: #0D47A1;
+$distancia: 1rem;
+$tamanho-borda: 4px;
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+//Magins
+@mixin margin{
+	margin: $distancia
+}
+
+@mixin margin-($lado){
+	margin-#{$lado}: $distancia;
+}
+
+//Padding
+@mixin padding{
+	padding: $distancia;
+}
+
+@mixin padding-($lado){
+	padding-#{$lado}: $distancia;
+}

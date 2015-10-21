@@ -1,0 +1,66 @@
+@import 'base';
+
+#container-menu{
+	direction: rtl;
+	position: relative;
+}
+
+#container-menu *{
+	direction: ltr;
+}
+
+#check-box-menu{
+  display: none;
+}
+
+label[for=check-box-menu]{
+  background: #fff;
+}
+
+#check-box-menu:checked ~ ul{
+	display: list-item;
+}
+
+nav{
+
+	& ul{
+		z-index: 1;
+		border-top: 1px solid #ccc;
+		position: absolute;
+		display: none;
+		padding:0px;
+		margin:0px;
+		background-color:#fff;
+		list-style:none;
+		transition: all 0.2s ease;
+	}
+
+	& li, & li a{
+		@include padding();
+	}
+
+	& a{
+		text-decoration: none;
+	}
+
+	& li a:hover{
+		background-color: lighten($cor-padrao, 20%);
+		border-bottom: 4px solid black;
+	}
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+@media #{$desktop}{
+	nav label{
+		display: none;
+	}
+
+	nav ul{
+		display: flex;
+		position: relative;
+	}
+
+}

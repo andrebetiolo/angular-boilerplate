@@ -1,0 +1,18 @@
+@import 'base';
+
+.card{
+  background: #fff;
+  width: 300px;
+  margin: calc($distancia/2);
+  @extend [box-shadow];
+  @extend [border-radios];
+
+  img{
+    max-width: 100%;
+  }
+
+  figcaption{
+    @extend [bold];
+    @include margin();
+  }
+}

@@ -1,0 +1,35 @@
+@import 'base';
+
+form{
+  width: 100%;
+}
+
+form input{
+  max-width: 100%;
+  background: #fff;
+}
+
+form input, form textarea{
+    border: 1px solid #eee;
+}
+
+form input, form textarea, form button{
+  @include padding();
+  border-radius: $tamanho-borda;
+}
+
+form button{
+  font-weight: bold;
+  border: 1px solid transparent;
+  background: darken($cor-padrao, 30%);
+}
+
+form *{
+  margin: .5rem 0;
+}
+
+@media #{$desktop}{
+  form{
+    max-width: 600px;
+  }
+}

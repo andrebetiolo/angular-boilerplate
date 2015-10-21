@@ -1,0 +1,24 @@
+{
+  "name": "angular-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "André Betiolo <andrebetiolo@gmail.com>"
+  ],
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.4.7"
+  }
+}

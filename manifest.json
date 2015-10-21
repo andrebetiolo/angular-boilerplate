@@ -1,0 +1,15 @@
+{
+  "start_url": "/index.html?webapp=1",
+  "short_name": "Angular boilerplate",
+  "name": "Angular boilerplate",
+  "icons": [
+    {
+      "src": "/imagens/icone192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "display": "fullscreen",
+  "orientation": "any",
+  "gcm_sender_id": "numero"
+}
