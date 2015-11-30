@@ -2,9 +2,10 @@
 $cor-padrao: #2196F3;
 $cor-secundaria: #0D47A1;
 $distancia: 1rem;
-$tamanho-borda: 4px;
-$mobile: "(max-width: 1023px)";
-$desktop: "(min-width: 1024px)";
+$mobile: "(max-width: 980px)";
+$desktop: "(min-width: 991px)";
+
+//Mixins---
 
 //Magins
 @mixin margin{
@@ -22,4 +23,30 @@ $desktop: "(min-width: 1024px)";
 
 @mixin padding-($lado){
 	padding-#{$lado}: $distancia;
+}
+
+//Placeholders---
+%margin{
+	margin: $distancia;
+}
+
+%padding{
+	padding: $distancia;
+}
+
+%half-margin{
+	margin: $distancia/2;
+}
+
+%box-shadow{
+	webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+%pointer{
+	cursor: pointer;
+}
+
+%width100{
+	width: 100%;
 }
