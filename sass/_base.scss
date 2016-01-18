@@ -2,10 +2,10 @@
 $cor-padrao: #2196F3;
 $cor-secundaria: #0D47A1;
 $distancia: 1rem;
-$mobile: "(max-width: 980px)";
-$desktop: "(min-width: 991px)";
-
-//Mixins---
+$tamanho-borda: 4px;
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$animate-duration: 1s;
 
 //Magins
 @mixin margin{
@@ -14,6 +14,14 @@ $desktop: "(min-width: 991px)";
 
 @mixin margin-($lado){
 	margin-#{$lado}: $distancia;
+}
+
+//Animation
+@mixin animation($animation){
+	-webkit-animation: $animation $animate-duration;
+	-moz-animation: $animation $animate-duration;
+	-ms-animation: $animation $animate-duration;
+	animation: $animation $animate-duration;
 }
 
 //Padding
@@ -36,6 +44,10 @@ $desktop: "(min-width: 991px)";
 
 %half-margin{
 	margin: $distancia/2;
+}
+
+%half-padding{
+	padding: $distancia/2;
 }
 
 %box-shadow{

@@ -1,18 +1,31 @@
-@import 'base';
+@import 'base', 'layout';
 
 .card{
+  @extend [padding];
   background: #fff;
   width: 300px;
-  margin: calc($distancia/2);
+  margin: .5rem;
+  text-align: left;
   @extend [box-shadow];
   @extend [border-radios];
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+
+  div, .caption{
+    @extend .partition;
+  }
 
   img{
     max-width: 100%;
   }
 
-  figcaption{
+  .caption{
     @extend [bold];
-    @include margin();
+  }
+
+  .caption, div{
+    padding: .5rem 0;
   }
 }

@@ -1,0 +1,33 @@
+@import "base";
+
+$transition: all;
+$time: 1s;
+$timing-function: ease;
+
+[ng-view]{
+
+  & .ng-enter{
+
+    .login{
+      @include animation(slideInRight);
+    }
+
+    .cadastro{
+      @include animation(slideInRight);
+    }
+
+  }
+
+  & .ng-leave{
+
+    .login{
+      @include animation(slideOutLeft);
+    }
+
+    .cadastro{
+      @include animation(slideOutLeft);
+    }
+
+  }
+
+}
